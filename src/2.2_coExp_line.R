@@ -49,5 +49,13 @@ gplots::heatmap.2(nCOV_DE, trace = "none", col="bluered", scale="row", labRow =N
 
 ################################################################################
 
-# clusterColor <- sample(rainbow(5))
-# tmp <- map2col(as.numeric(as.factor(DE$cluster_id)), clusterColor)
+load("../results/DEA_pneu_list.RData")
+
+library(EnhancedVolcano)
+
+limma_res <- DEA_list$limma_DEA$nCoV_Heal
+# limma_res <- DEA_list$limma_res$nCoV_Heal
+
+EnhancedVolcano(limma_res, lab=limma_res$nCoV_Heal, x="logFC", y="adj.P.Val",
+                pCutoff=0.05, FCcutoff=2, selectLab = overlapped_gene,
+                drawConnectors=TRUE, ylab = "-log(adj.P)" ) 
