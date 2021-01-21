@@ -30,3 +30,5 @@ The R code and data to reproduce all the figures and tables in the manuscript, [
 
 Zhilong Jia, Xinyu Song, Jinlong Shi, Weidong Wang, Kunlun He, [Transcriptome-based drug repositioning for coronavirus disease 2019 (COVID-19), Pathogens and Disease](https://doi.org/10.1093/femspd/ftaa036), 2020, ftaa036, https://doi.org/10.1093/femspd/ftaa036
 
+## Supporting Information
+ALL the figures and Supporting Information (such as Tbale S1, Figure S1) are lcoated at `./results/figures_and_supporting_informaiton`. Hope you could serach them as the journal have not fixed the issue after my query.
